@@ -1,119 +1,118 @@
 /* Style */
 /* CSS reset */
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    background-color: dodgerblue;
+/* Regole CSS */
+body {
+    background-color: #38AAFF;
+    font-family: Arial, Helvetica, sans-serif;
 }
-header{
+/* HEADER */
+header {
+    padding: 20px;
     background-color: white;
-    height: 100px;
 }
-#logo {
-    height: 80px;
-    margin-top: 10px;
+#logo-img {
     vertical-align: middle;
 }
 #logo-text{
+    font-size: 30px;
     font-weight: bold;
-    font-size: 68px;
     vertical-align: middle;
-    font-family: Arial, Helvetica, sans-serif;
 }
-main {
-    margin-top: 50px;
-}
-#container {
-    width: 70%;
-    background-color: white;
-    margin: auto;
+/* MAIN */
+.container {
+    width: 60%;
+    margin: 30px auto;
     border-radius: 10px;
-    margin-bottom: 50px;
-    padding-bottom: 20px;
 }
-.layout {
-    margin-left: 50px;
-}
-.button {
-    border-radius: 5px;
-    width: 100px;
-    height: 35px;
-    border: 1px solid grey;
-    display: inline-block;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    color: black;
-    font-weight: bold;
-}
-.blue{
-    background-color: dodgerblue;
-}
-.white {
+/* MAIN TOP*/
+.top {
     background-color: white;
+    margin-bottom: 2px;
+    border-radius:  10px 10px 0px 0px;
+    padding: 15px 30px;
 }
-hr {
-    border: 1px solid lightgrey;
-    margin-bottom: 50px;
+.tasks {
+    background-color: white;
+    border-radius: 0px 0px 10px 10px;
+    padding: 20px 30px;
 }
-h1 {
-    font-family: Arial, Helvetica, sans-serif;
-    color: rgb(51, 50, 50);
-    margin-bottom: 10px;
-    margin-top: 30px;
+.btn {
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
 }
-h1::before {
-    content: '\2713 '
+.btn-blue {
+    background-color: #38AAFF;
 }
-.cerchio {
-    display: inline-block;
-    border-radius: 50px;
-    width: 20px;
-    height: 20px;
-    text-align: center;
-    font-weight: bold;
+.btn-grey {
+    background-color: white;
+    border: 1px solid grey;
+}
+/* MAIN BOTTOM */
+ul {
+    list-style: none;
+}
+.tasks h3::before {
+    content: '\2713';
+    margin-right: 10px;
+}
+h3 {
+    color: rgb(49, 49, 49)
+}
+.circle {
     width: 25px;
     height: 25px;
+    border-radius: 50px;
+    display: inline-block;
+    text-align: center;
+    line-height: 20px;
+    margin-right: 10px;
 }
-.verde { 
-    border: 1px solid green;  
+.checked {
+    border: 1px solid green;
     color: green;
 }
-.rosso {
-    color: red;
+.checked::before {
+    content: '\2713';
+}
+.deleted {
     border: 1px solid red;
+    color: red;
 }
-.description{
-    color: rgb(51, 50, 50);
-    font-size: 28px;
-    margin: 0 10px;
+.deleted::before {
+    content: '\2715';
 }
-.label {
-    border-radius: 10px;
-    width: 100px;
-    height: 30px;
-    border: none;
+li {
+    padding: 10px 0px;
+    font-size: 20px;
+}
+/* TAG e COLORI */
+.tag {
     color: white;
-    margin-top: 20px;
+    padding: 6px;
+    border-radius: 10px;
+    font-size: 12px;
 }
-.blue {
-    background-color: dodgerblue;
+.tag-blue {
+    background-color: rgb(120, 193, 241);
 }
-.purple {
-    background-color: purple;
+.tag-purple {
+    background-color: rgb(240, 118, 240);
 }
-.green {
-    background-color: lightseagreen;
+.tag-green {
+    background-color: rgb(85, 226, 155);
 }
-.orange {
-    background-color: orange;
+.tag-orange {
+    background-color: rgb(223, 145, 28);
 }
-.pink {
-    background-color: deeppink;
+.tag-lime {
+    background-color: rgb(135, 245, 108);
 }
-.lime{
-    background-color: lime;
+.tag-pink{
+    background-color: rgb(236, 87, 150);
 }
-

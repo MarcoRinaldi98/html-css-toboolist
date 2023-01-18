@@ -7,82 +7,91 @@
 
     <link rel="stylesheet" href="./CSS/style.css">
 
-    <title>TobooList</title>
+    <title>Toboolist</title>
 </head>
 <body>
+    <!-- Intestazione -->
     <header>
-        <div id="header-logo">
-            <img id="logo" src="./img/Logo.png" alt="logo toboolist">
-            <span id="logo-text"> Toboolist </span>
-        </div>
+        <img id="logo-img" src="img/logo.png" alt="Logo Toboolist">
+        <span id="logo-text">Toboolist</span>
     </header>
+    <!-- Corpo della pagina -->
     <main>
-        <div id="container">
-            <div class="layout">
-                <button class="button blue">Add Task</button>
-                <button class="button white">Add Section</button>
+        <!-- Container di layout -->
+        <div class="container">
+            <!-- Parte superiore del corpo -->
+            <div class="top">
+                <button class="btn btn-blue">Add Task</button>
+                <button class="btn btn-grey">Add Section</button>
+            </div>
+            <!-- Parte inferiore del corpo -->
+            <div class="tasks">
+                <ul>
+                    <li>
+                        <!-- intestazione lista -->
+                        <h3>New Task</h3>
+                        <ul>
+                            <!-- Riga della lista -->
+                            <li>
+                                <span class="circle checked"></span>
+                                Quarterly Newsletter
+                                <span class="tag tag-blue">Editorial</span>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>Today</h3>
+                        <ul>
+                            <li>
+                                <span class="circle checked"></span>
+                                Recruting blog post
+                                <span class="tag tag-blue">Editorial</span>
+                            </li>
+                            <li>
+                                <span class="circle checked"></span>
+                                Mobile app launch
+                                <span class="tag tag-purple">Q1 Goals</span>
+                            </li>
+                            <li>
+                                <span class="circle deleted"></span>
+                                Interview John H.
+                                <span class="tag tag-green">Recruting</span>
+                            </li>
+                            <li>
+                                <span class="circle checked"></span>
+                                Summit update to mobile storefonts
+                                <span class="tag tag-orange">Mobile</span>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>Upcoming</h3>
+                        <ul>
+                            <li>
+                                <span class="circle deleted"></span>
+                                Schedule meeting with Alex
+                            </li>
+                            <li>
+                                <span class="circle checked"></span>
+                                Homepage Refresh
+                                <span class="tag tag-pink">Q1 Goals</span>
+                            </li>
+                            <li>
+                                <span class="circle checked"></span>
+                                Onboard new Sales team members
+                                <span class="tag tag-lime">Sales</span>
+                            </li>
+                            <li>
+                                <span class="circle checked"></span>
+                                Review editorial calendar
+                                <span class="tag tag-blue">Editorial</span>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
             </div>
 
-            <hr/>
-
-            <div class="layout">
-                <h1> New Task </h1>
-                <div class="cerchio verde">
-                    &#10003;
-                </div>
-                <span class="description"> Quarterly Newsletter </span>
-                <span><button class="label blue">Editorial</button></span>
-
-                <h1> Today </h1>
-                <div class="cerchio verde">
-                    &#10003;
-                </div>
-                <span class="description"> Recruting blog post </span>
-                <span><button class="label blue">Editorial</button></span>
-                    <br/>
-                <div class="cerchio verde">
-                    &#10003;
-                </div>
-                <span class="description"> Mobile app luaunch </span>
-                <span><button class="label purple">Q1 Goals</button></span>
-                <br/>
-                <div class="cerchio rosso">
-                    &#9747;
-                </div>
-                <span class="description"> Interview John H. </span>
-                <span><button class="label green">Recruting</button></span>
-                <br/>
-                <div class="cerchio verde">
-                    &#10003;
-                </div>
-                <span class="description"> Summit update to mobile storefronts </span>
-                <span><button class="label orange">Mobile</button></span>
-
-                <h1> Upcoming </h1>
-                <div class="cerchio rosso">
-                    &#9747;
-                </div>
-                <span class="description"> Schedule meeting with Alex </span>
-                <br/>
-                <div class="cerchio verde">
-                    &#10003;
-                </div>
-                <span class="description"> Homepage refresh </span>
-                <span><button class="label pink">Websites</button></span>
-                <br/>
-                <div class="cerchio verde">
-                    &#10003;
-                </div>
-                <span class="description"> Onboard new Sales team members </span>
-                <span><button class="label lime">Sales</button></span>
-                <br/>
-                <div class="cerchio verde">
-                    &#10003;
-                </div>
-                <span class="description"> Rewiew editorial calendar </span>
-                <span><button class="label blue">Editorial</button></span>
-                <br/>
-            </div>
         </div>
     </main>
     
